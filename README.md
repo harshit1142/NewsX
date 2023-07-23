@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# NewsX
+
+
+https://github.com/harshit1142/NewsX/assets/112557145/d434ce09-7e9b-450b-8e00-832edb319e98
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
