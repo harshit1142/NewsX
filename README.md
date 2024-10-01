@@ -69,7 +69,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contributors 
 
 <p align="center">
-  <a href="https://github.com/harshit1142/e-commerce/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=harshit1142/e-commerce" max={1000} columns={100} anon={1}/>
+  <a href="https://github.com/harshit1142/NewsX/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=harshit1142/NewsX" max={1000} columns={100} anon={1}/>
   </a>
 </p>
