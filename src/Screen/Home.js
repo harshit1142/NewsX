@@ -9,19 +9,21 @@ export default function Home({ cat, con }) {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(false);
 
+  const apiKey = process.env.REACT_APP_NEWS_API_KEY;
+
   // Constructing the API URL using useMemo
   const apiUrl = useMemo(() => {
     if (searchit) {
-      return `https://newsapi.org/v2/everything?q=${searchit}&apiKey=d9405ee644dd4c678b25eed0dd3cce59`;
+      return `https://newsapi.org/v2/everything?q=${searchit}&apiKey=${apiKey}`;
     }
     if (con) {
-      return `https://newsapi.org/v2/top-headlines?country=${con}&apiKey=d9405ee644dd4c678b25eed0dd3cce59`;
+      return `https://newsapi.org/v2/top-headlines?country=${con}&apiKey=${apiKey}`;
     }
     if (cat) {
-      return `https://newsapi.org/v2/top-headlines?country=in&category=${cat}&apiKey=d9405ee644dd4c678b25eed0dd3cce59`;
+      return `https://newsapi.org/v2/top-headlines?country=in&category=${cat}&apiKey=${apiKey}`;
     }
     return '';
-  }, [cat, con, searchit]);
+  }, [cat, con, searchit, apiKey]);
 
   // Fetch data using useCallback
   const fetchData = useCallback(async () => {
