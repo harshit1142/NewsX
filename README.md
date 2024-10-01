@@ -107,5 +107,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contributors
 
 [![Contributors](https://contrib.rocks/image?repo=harshit1142/NewsX)](https://github.com/harshit1142/NewsX/graphs/contributors)
-```
 
