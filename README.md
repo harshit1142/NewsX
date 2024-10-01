@@ -1,4 +1,5 @@
-# NewsX
+# NewsX  
+[Project-Link](https://news-x-hazel.vercel.app/)
 
 
 https://github.com/harshit1142/NewsX/assets/112557145/d434ce09-7e9b-450b-8e00-832edb319e98
