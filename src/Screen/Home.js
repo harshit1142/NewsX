@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import Card from '../Components/Card';
 import axios from 'axios';
 import { motion, AnimatePresence } from "framer-motion";
@@ -16,14 +16,17 @@ export default function Home({ cat, con }) {
     if (searchit) {
       return `https://newsapi.org/v2/everything?q=${searchit}&apiKey=${apiKey}`;
     }
-    if (con) {
+    if (con && !cat) {
       return `https://newsapi.org/v2/top-headlines?country=${con}&apiKey=${apiKey}`;
     }
-    if (cat) {
-      return `https://newsapi.org/v2/top-headlines?country=in&category=${cat}&apiKey=${apiKey}`;
+    if (cat && !con) {
+      return `https://newsapi.org/v2/top-headlines?category=${cat}&apiKey=${apiKey}`;
     }
-    return '';
-  }, [cat, con, searchit, apiKey]);
+    if (cat && con) {
+      return `https://newsapi.org/v2/everything?country=${con}&category=${cat}&apiKey=${apiKey}`;
+    }
+    return "";
+  }, [cat, con, searchit]);
 
   // Fetch data using useCallback
   const fetchData = useCallback(async () => {
