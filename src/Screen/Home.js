@@ -56,6 +56,10 @@ export default function Home({ cat, con }) {
     fetchData(); // Fetch data only when search is submitted
   };
 
+  useEffect(() => {
+    fetchData();
+  }, [cat, con]);
+
   return (
     <div className='mt-5'>
       <nav className="navbar navbar-light bg-light container-fluid d-flex justify-content-end">
