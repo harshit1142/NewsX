@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useCallback, useEffect } from "react";
 import Card from "../Components/Card";
 import axios from "axios";
+
 import { motion, AnimatePresence } from "framer-motion";
 import NotFound from "../Components/NotFound";
 
@@ -26,7 +27,8 @@ export default function Home({ cat, con }) {
       return `https://newsapi.org/v2/everything?country=${con}&category=${cat}&apiKey=${apiKey}`;
     }
     return "";
-  }, [cat, con, searchit, apiKey]);
+  }, [cat, con, searchit]);
+
 
   // Fetch data using useCallback
   const fetchData = useCallback(async () => {
@@ -64,7 +66,8 @@ export default function Home({ cat, con }) {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [cat, con]);
+
 
   return (
     <div className="mt-5">
