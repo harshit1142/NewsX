@@ -118,9 +118,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Bootstrap](https://getbootstrap.com/)
 - [React Bootstrap](https://react-bootstrap.github.io/)
 
-## Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=harshit1142/NewsX)](https://github.com/harshit1142/NewsX/graphs/contributors)
 
 ## Contributors
 
@@ -139,4 +137,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-[![All Contributors](https://img.shields.io/github/all-contributors/projectOwner/projectName?color=ee8449&style=flat-square)](#contributors)
