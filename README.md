@@ -130,7 +130,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Ripudaman4742"><img src="https://avatars.githubusercontent.com/u/44752831?v=4?s=100" width="100px;" alt="Ripudaman"/><br /><sub><b>Ripudaman</b></sub></a><br /><a href="#code-ripu2" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Ripudaman4742"><img src="https://avatars.githubusercontent.com/u/44752831?v=4?s=100" width="100px;" alt="Ripudaman"/><br /><sub><b>Ripudaman</b></sub></a><br /><a href="#code-ripu2" title="Code">💻</a> <a href="#bug-ripu2" title="Bug reports">🐛</a></td>
     </tr>
   </tbody>
 </table>
