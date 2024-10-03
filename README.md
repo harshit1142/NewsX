@@ -1,7 +1,5 @@
 # 📰 NewsX - Your Daily Dose of News
 
-[Project Link](https://news-x-hazel.vercel.app/)
-
 ![Screenshot from 2024-10-01 22-54-09](https://github.com/user-attachments/assets/0ed758fc-136b-4a29-9f39-9e9c3fa3297d)
 
 ## Project Description
