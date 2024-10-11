@@ -72,21 +72,23 @@ export default function Home({ cat, con }) {
   return (
     <div className="mt-5">
       <nav className="navbar navbar-light bg-light container-fluid d-flex justify-content-end">
-        <form className="d-flex justify-content-end" onSubmit={handleSearch}>
+        <form className="d-flex justify-content-end space-y-2" onSubmit={handleSearch}>
           <input
-            className="form-control mr-sm-2 me-3"
+            className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 dark:placeholder-gray-400 "
             type="search"
             onChange={(e) => setSearch(e.target.value)}
             value={searchit}
             placeholder="Search"
             aria-label="Search"
           />
-          <button
-            className="btn btn-outline-success my-2 my-sm-0"
-            type="submit"
+          <button 
+          className="btn bg-success text-white my-2 my-sm-0 duration-300 ease-in-out opacity-80 hover:opacity-100 focus:ring-4 focus:outline-none focus:ring-success-300 rounded-lg px-3 mx-2"
+          type="submit"
           >
-            Search
+          Search
           </button>
+
+
         </form>
       </nav>
       <AnimatePresence>
