@@ -5,27 +5,89 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  background-color: #e7e7e7;
+  padding: 2px 4px;
+  border-radius: 4px;
 }
-.img-post{
-  width: 300px;
-  height: 200px;
+
+.img-post {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+  transition: transform 0.3s;
 }
-.card{
-  width: 300px;
+
+.img-post:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
   height: 400px;
-  box-shadow: 2px 2px 3px black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-.notFound{
-   width: 100%;
-   height: 600px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: black;
-   color: white;
+
+.card:hover {
+  transform: translateY(-5px) rotate(1deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+  margin: 16px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.card:hover h2 {
+  color: #007bff;
+}
+
+.card p {
+  margin: 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+.card:hover p {
+  color: #555;
+}
+
+.notFound {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  transition: background-color 0.5s;
+}
+
+.notFound:hover {
+  background-color: #3c4043;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+
+  .notFound {
+    font-size: 20px;
+  }
 }
